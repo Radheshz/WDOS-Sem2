@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" contentwidth="device-width",initial-scale="1">
+        <meta name="description" content="This is a hotel website">
+        <meta name="keywords" content="headings,images,nav tags,meta tags">
+        <meta name="author" content="Radhesh Zureshkumar">
+        <link rel="stylesheet" href="CSS folder/trial 1.css">
+        <script src="Java Script Folder/main.js" defer></script>
+        
+    </head>
+    <title>Bookings page</title>
+    <body>
+
+            <header>
+              <nav class="topNav">
+                <div class="logo">
+                  <img src="Images folder/logo.png" alt="logo">
+                </div>
+                <ul class="nav-links">
+                  <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="Branches.html"><b>Branches</b></a></li>
+                    <li><a href="Adventures.html"><b>Adventures</b></a></li>
+                    <li><a href="Restuarants.html"><b>Restaurants</b></a></li>
+                    <li><a href="Bookings.html"><b>Bookings</b></a></li>
+                </ul>
+                 
+                </ul>
+                <div class="search-box">
+                  <input type="text" placeholder="Search...">
+                  <button type="submit">Search</button>
+                </div>
+              </nav>
+            </header>
+    </body>
+    <body background="Images folder/wallpaper trial.jpg">
+<br>
+<div class="forms-box">
+        <h1>Book Your Stay</h1>
+        <div class="forms-container">
+            <div class="form-wrapper">
+                <h2><u>Book a Room</u></h2>
+                <form id="roomBookingForm" class="booking-form">
+                    <div class="input-group">
+                        <label for="firstname">Name:</label>
+                        <input type="text" id="firstname" name="firstName" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="roomType">Room Type:</label>
+                        <select id="roomType" name="roomType" required>
+                            <option value="single">Single</option>
+                            <option value="double">Double</option>
+                            <option value="triple">Triple</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="checkInDate">Check-In Date:</label>
+                        <input type="date" id="checkInDate" name="checkInDate" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="checkOutDate">Check-Out Date:</label>
+                        <input type="date" id="checkOutDate" name="checkOutDate" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="numAdults">Number of Adults:</label>
+                        <input type="number" id="numAdults" name="numAdults" min="1" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="numChildren">Number of Children:</label>
+                        <input type="number" id="numChildren" name="numChildren" min="0" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="extraRequirements">Extra Requirements:</label><br> 
+                        <label for="wifi">
+                            <input type="checkbox" id="wifi" name="wifi">
+                            WiFi
+                        </label>
+                        <label for="pool_view">
+                            <input type="checkbox" id="pool_view" name="views" value="pool_view">
+                            Pool View
+                        </label> 
+                        <label for="garden_view">
+                            <input type="checkbox" id="garden_view" name="views" value="garden_view">
+                            Garden View
+                        </label>
+                        <label for="extra_bed">
+                            <input type="checkbox" id="extra_bed" name="extra_bed">
+                            Extra Bed
+                        </label><br> 
+                    </div>
+                    <div class="input-group">
+                        <label for="promoCode">Promo Code:</label>
+                        <input type="text" id="promoCode" name="promoCode"><br><br>
+                    </div>
+                   
+
+                    <button type="submit" id="BookRoom">Book Room</button>
+                </form>
+            </div>
+            <div class="form-wrapper">
+                <h2><b><u>Book an Adventure</u></h2>
+                <form id="adventureBookingForm" class="booking-form">
+                    <div class="input-group">
+                        <label for="adventureType">Adventure Type:</label>
+                        <select id="adventureType" name="adventureType" required>
+                            <option value="architecture">Visiting Historic Monuments</option>
+                            <option value="safari">Safari</option>
+                            <option value="desertriding">Desert Riding</option>
+                            <option value="hotairballoon">Hot Air Balloon</option>
+                        </select>
+                    </div>
+                    <div id="input-group">
+                        <label><input type="radio" name="participantType" value="localAdult"> Local Adult</label><br>
+                        <label><input type="radio" name="participantType" value="localKid"> Local Kid (above 5 years)</label><br>
+                        <label><input type="radio" name="participantType" value="foreignAdult"> Foreign Adult</label><br>
+                        <label><input type="radio" name="participantType" value="foreignKid"> Foreign Kid</label><br>
+                        <label><input type="checkbox" id="needGuide"> Need Guide</label><br>
+                    </div>
+                    <div id="participantOptions">
+                  </div>
+                    <div class="input-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="numParticipants">Number of Participants:</label>
+                        <input type="number" id="numParticipants" name="numParticipants" min="1" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="contactEmail">Contact Email:</label>
+                        <input type="email" id="contactEmail" name="contactEmail" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="contactPhone">Contact Phone:</label>
+                        <input type="tel" id="contactPhone" name="contactPhone" required>
+                    </div>
+                    <br><br><br><br><br><br>
+
+
+
+                    <button type="submit">Book Adventure</button>
+                </form>
+            </div>
+        </div>
+        <div class="current-bookings">
+            <h2>Current Bookings</h2>
+            <div id="roomBookingDetails" class="booking-details"></div>
+            <div id="adventureBookingDetails" class="booking-details"></div>
+        </div>
+        <br>
+        
+        <div class="overall-bookings">
+            <h2>Overall Bookings</h2>
+            <div id="overallRoomBooking" class="overall-booking"></div>
+            <div id="overallAdventureBooking" class="overall-booking"></div>
+            <div id="totalCost" class="overall-booking"></div>
+        </div>
+        <button id="loyaltyButton">Check Loyalty Points</button>
+        <button id="favoriteButton">Save to Favorites</button>
+        <button id="finalbook">Book Rooms</button>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

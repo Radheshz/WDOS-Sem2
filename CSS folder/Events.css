@@ -1,0 +1,196 @@
+#hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.864), rgba(0, 0, 0, 0.5)),url("../Images folder/weddings\ event.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#hero-img1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.864), rgba(0, 0, 0, 0.5)),url("../Images folder/meeting\ 1.avif");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    color: gold;
+    font-family: 'mediga','Times New Roman', Times, serif;
+    font-size: 100px;
+}
+.topNav{
+    overflow: hidden;
+    background-color: rgba(192, 31, 31, 0.384);
+    margin-top: -20px;
+    position: sticky;
+    top: 0;
+    
+}
+.topNav a{
+    float: left;
+    color:rgb(83, 71, 1) ;
+    text-align: center;
+    padding: 30px 40px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.topNav a:hover{
+    background-color:rgba(192, 31, 31, 0.384) ;
+    color: gold;
+
+}
+.topNav a:active{
+    background-color:gold ;
+    color: black;
+}
+.topNav input[type=text]{
+    float: right;
+    font-size: 20px;
+    margin-top: 30px;
+}
+h2{
+    font-family: 'mediga','Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 50px;
+    color:rgb(83, 71, 1);
+}
+ body p{
+    font-size: 25px;
+    font-family: 'mediga','Times New Roman', Times, serif;
+    color: brown;
+}
+.center-justify{
+    text-align: justify;
+    max-width: 900px;
+    margin:0 auto;
+
+}
+.container1{
+    display: inline-block;
+    width: 420px;
+    text-align: center;
+    transition:transform 0.3s ease-in-out;
+    margin: 25px;
+    box-shadow: rgba(0, 0, 0, 0.3);
+}
+.container1 img{
+    width: 110%;
+    height: 50%;
+    border-radius: 5px;
+}
+.container1 h3{
+    font-size: 40px;
+    font-family: 'mediga','Times New Roman', Times, serif;
+    justify-content: center;
+    color: brown;
+
+}
+.container1 li{
+    font-family: 'mediga','Times New Roman', Times, serif;
+    color: brown;
+    font-size: 30px;
+}
+.container1 :hover{
+    transform:scale(1.5) ;
+}
+.container2{
+    display: flex;
+}
+.container2-box{
+    width: 50%;
+    border-radius: 5px;
+    border:rgb(83, 71, 1);
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.container2 h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.container2 p{
+    font-size:25px ;
+}
+.contact-box{
+    border: 1px solid gold;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 800px;
+    margin: 0 auto;
+
+}
+.contact-box h5{
+    color: brown;
+    font-family: 'mediga','Times New Roman', Times, serif;
+    font-size: 30px;
+    margin: 10px;
+}
+.contact-box p{
+    font-size: 20px;
+    color: brown;
+    font-family: 'mediga','Times New Roman', Times, serif;
+}
+.contact-box a{
+    color: brown;
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+
+}
+#container-3{
+    width: 1000px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border: 1px solid gold;
+
+}
+#container-3 h6{
+    font-size: 30px;
+    color: brown;
+    margin-bottom: 20px;
+    font-family: 'mediga','Times New Roman', Times, serif;
+}
+#container-3 p{
+    font-size: 25px;
+    color: brown;
+    font-family: 'mediga','Times New Roman', Times, serif;
+}
+#partnerships{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.footer{
+    background-color: rgba(192, 31, 31, 0.384) ;
+    color: rgb(83, 71, 1);
+    padding: 35px 0;
+    text-align: center;
+    font-size: 30px;
+}
+.footer-links{
+    margin-top: 25px;
+}
+.footer-links a{
+    color: rgb(83, 71, 1);
+    font-family: 'mediga';
+    margin: 0 10px;
+}
+button{
+    padding: 15px;
+    background-color: wheat;
+    border: gold;
+    color: brown;
+    border-radius: 5px;
+    display: inline;
+    font-size: 15px;
+    text-decoration: none;
+}
+
